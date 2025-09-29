@@ -1,64 +1,90 @@
-<!DOCTYPE html>
-<html>
+<html lang="zh-Hans">
 
 <head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="style.css" type="text/css" rel="stylesheet">
-<title>Frank419 - Apps</title>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>杏川铭心</title>
+    <link href="avatar.jpg" type="image/jpeg" rel="icon">
 </head>
 
 <body>
 
-<div class="bg"></div>
+<div id="background"></div>
 
-<div class="header">
-	<div class="header-title">Frank419</div>
-	<div class="header-time" id="header-time"></div>
+<div id="container">
+
+    <div id="avatar">
+        <img src="avatar.jpg">
+    </div>
+
+    <section aria-label="介绍">
+        <h1>你好呀！我叫杏川铭心</h1>
+        <p>一个对网站和服务器感兴趣的大学生</p>
+        <p>你说名字？当然是网名啊喂！</p>
+    </section>
+
+    <section aria-label="技能">
+        <h2>我的技能</h2>
+        <ul class="skills">
+            <li><span>PHP</span><progress value="60" max="100"></progress></li>
+            <li><span>JavaScript</span><progress value="30" max="100"></progress></li>
+            <li><span>HTML</span><progress value="90" max="100"></progress></li>
+            <li><span>CSS</span><progress value="35" max="100"></progress></li>
+            <li><span>Python</span><progress value="25" max="100"></progress></li>
+            <li><span>Bash</span><progress value="60" max="100"></progress></li>
+        </ul>
+        <p>话说判断的标准似乎有点宽松</p>
+    </section>
+
+    <section aria-label="做过的东西">
+        <h2>我做过的奇奇怪怪的东西</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>博客</h3>
+                <p><s>非常水的</s>技术博客，努力周更，会发一些自己的经验在上面</p>
+                <a href="https://onmyodev.com/">点我直达</a>
+            </div>
+            <div class="project">
+                <h3>MinimalistFlex</h3>
+                <p>自己写的同时也是自用的简约 WordPress 主题，本人 GitHub 上唯一一个有 Star 的仓库...</p>
+                <a href="https://wordpress.org/themes/MinimalistFlex">WordPress 主题页</a>
+                <a href="https://github.com/onmyodev/MinimalistFlex">GitHub 仓库页</a>
+            </div>
+            <div class="project">
+                <h3>MC 服务器</h3>
+                <p>为什么要宣传这个呢？我也不知道 ¯\_ (ツ)_/¯</p>
+                <p>地址：dyhcn.codes</p>
+            </div>
+        </div>
+        <p><s>短期内肯定爆死的就不放啦，比如说服务器只有一个月有效期的那种</s></p>
+    </section>
+
+    <section aria-label="社交">
+        <h2>我的社交媒体账号</h2>
+        <p>虽然不全是社交媒体的说...</p>
+        <p>另外我自建服务的爱好在这里体现的淋漓尽致...</p>
+        <ul class="socials">
+            <li><span>GitHub:</span><a href="https://github.com/onmyodev/">onmyodev</a></li>
+            <li><span>Mastodon:</span><a href="https://meishin.site/@kyoukawa">@kyoukawa@meishin.site</a></li>
+            <li><span>Email:</span><a href="mailto:support@onmyodev.com">support@onmyodev.com</a></li>
+        </ul>
+        <p>在某国外论坛上也很活跃的说！</p>
+        <a href="https://forum.infinityfree.com/u/Meishin/summary">点我直达</a>
+    </section>
+
+    <section aria-label="附录">
+        <h2>一点点牢骚（算吗？）</h2>
+        <p>什么，你说这个网站有点丑？</p>
+        <p>嗯，我只能说我就是喜欢这种风格，国内个人站长喜欢的那种华丽丽的设计，我真不感冒</p>
+        <p>不然我也不会去写我自己的 WordPress 主题了</p>
+    </section>
+
+    <footer>
+        <p>背景的话，想不起来是从哪里借的了 (´･ω･`)</p>
+    </footer>
+
 </div>
-
-<div class="container">
-
-<div class="apps">
-	<a class="app" href="https://frank419.link">
-		<div class="app-icon">
-			<img src="icon-blog.png">
-		</div>
-		<div class="app-title">Frank的技术笔记</div>
-	</a>
-
-	<a class="app" href="https://stats.uptimerobot.com/Ngv0LhV9EX">
-		<div class="app-icon">
-			<img src="icon-status.png">
-		</div>
-		<div class="app-title">系统状态</div>
-	</a>
-	
-	<a class="app" href="https://monsta.frank419.link">
-		<div class="app-icon">
-			<img src="icon-file.png">
-		</div>
-		<div class="app-title">在线FTP/SFTP工具</div>
-	</a>
-	
-	<a class="app" href="#">
-		<div class="app-icon">
-			<img src="icon-apps.png">
-		</div>
-		<div class="app-title">Apps</div>
-	</a>
-	
-</div>
-
-</div>
-
-<div class="footer">
-	<div>&copy;&nbsp;2023</div>
-</div>
-
-<script src="time.js"></script>
 
 </body>
 
