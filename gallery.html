@@ -7,6 +7,8 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <title>杏川铭心 — 相册</title>
     <link href="avatar.jpg" type="image/jpeg" rel="icon">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -31,6 +33,7 @@
     <section aria-label="介绍">
         <h1>相册</h1>
         <p>一些和我有关系的图片，当然，没有露脸 :P</p>
+        <p>所有图片都可以点击放大！</p>
         <p>向下滚动</p>
         <span class="ri-arrow-down-s-line ri-fw floating"></span>
     </section>
@@ -51,9 +54,18 @@
     <section aria-label="截图">
         <h2>各种截图</h2>
         <div class="screenshots">
-            <div class="screenshot"><img src="screenshots/screenshot1.png"></div>
-            <div class="screenshot"><img src="screenshots/screenshot2.png"></div>
-            <div class="screenshot"><img src="screenshots/screenshot3.png"></div>
+            <div class="screenshot">
+                <img src="screenshots/screenshot1.png">
+                <div class="note">博客首页</div>
+            </div>
+            <div class="screenshot">
+                <img src="screenshots/screenshot2.png">
+                <div class="note">GitHub 仓库（真的有 4 个 Star！）</div>
+            </div>
+            <div class="screenshot">
+                <img src="screenshots/screenshot3.png">
+                <div class="note">自建 Mastodon</div>
+            </div>
         </div>
     </section>
 
@@ -61,17 +73,40 @@
         <h2>一些美图</h2>
         <p>下面这些图不是我画的 :P</p>
         <p>只是给大家分享一下我的审美呀 (≧∀≦)</p>
+        <p>能找到原作者链接的我都放了哦，有的实在是找不到了...</p>
         <div class="screenshots">
-            <div class="screenshot"><img src="images/image1.jpg"></div>
-            <div class="screenshot"><img src="images/image2.jpg"></div>
-            <div class="screenshot"><img src="images/image3.jpg"></div>
-            <div class="screenshot"><img src="images/image4.jpg"></div>
-            <div class="screenshot"><img src="images/image5.jpg"></div>
+            <div class="screenshot">
+                <img src="images/image1.jpg">
+                <div class="note"><a href="https://www.zcool.com.cn/work/ZMjA1OTE0ODA=.html">剑雨逍遥</a></div>
+            </div>
+            <div class="screenshot">
+                <img src="images/image2.jpg">
+                <div class="note">仙侠世界 弓箭手</div>
+            </div>
+            <div class="screenshot">
+                <img src="images/image3.jpg">
+                <div class="note">上官婉儿 修竹墨客</div>
+            </div>
+            <div class="screenshot">
+                <img src="images/image4.jpg">
+                <div class="note"><a href="https://www.pixiv.net/artworks/79689646">阴阳师（国际服）两周年</a></div>
+            </div>
+            <div class="screenshot">
+                <img src="images/image5.jpg">
+                <div class="note"><a href="https://www.pixiv.net/artworks/76845494">七骑士 琳</a></div>
+            </div>
         </div>
         <p>基本上就是这些画风比较戳我啦 (*´∀ ˋ*)</p>
         <p>不主张版权。如果希望移除内容，请<a href="mailto:support@onmyodev.com">联系我</a>。</p>
     </section>
 
+</div>
+
+<div id="lightbox">
+    <div id="lightbox-close"><span class="ri-close-line ri-fw" id="lightbox-close-button"></span></div>
+    <div id="lightbox-content">
+        <img id="lightbox-image">
+    </div>
 </div>
 
 </body>
