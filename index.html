@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="icon/remixicon.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
     <title>杏川铭心</title>
     <link href="avatar.jpg" type="image/jpeg" rel="icon">
@@ -12,16 +13,27 @@
 
 <div id="background"></div>
 
+<header>
+    <div id="title">杏川铭心</div>
+    <nav>
+        <a class="current" href="#">关于我</a>
+        <a href="friends.html">友人帐</a>
+        <a href="gallery.html">相册</a>
+    </nav>
+</header>
+
 <div id="container">
 
-    <div id="avatar">
-        <img src="avatar.jpg">
+    <div class="avatar">
+        <img src="avatars/avatar.jpg">
     </div>
 
     <section aria-label="介绍">
         <h1>你好呀！我叫杏川铭心</h1>
         <p>一个对网站和服务器感兴趣的大学生</p>
         <p>你说名字？当然是网名啊喂！</p>
+        <p>向下滚动</p>
+        <span class="ri-arrow-down-s-line ri-fw floating"></span>
     </section>
 
     <section aria-label="技能">
@@ -41,20 +53,29 @@
         <h2>我做过的奇奇怪怪的东西</h2>
         <div class="projects">
             <div class="project">
-                <h3>博客</h3>
-                <p><s>非常水的</s>技术博客，努力周更，会发一些自己的经验在上面</p>
-                <a href="https://onmyodev.com/">点我直达</a>
+                <div class="icon"><span class="ri-wordpress-fill ri-fw"></span></div>
+                <div>
+                    <h3>博客</h3>
+                    <p><s>非常水的</s>技术博客，努力周更，会发一些自己的经验在上面</p>
+                    <a href="https://onmyodev.com/">点我直达</a>
+                </div>
             </div>
             <div class="project">
-                <h3>MinimalistFlex</h3>
-                <p>自己写的同时也是自用的简约 WordPress 主题，本人 GitHub 上唯一一个有 Star 的仓库...</p>
-                <a href="https://wordpress.org/themes/MinimalistFlex">WordPress 主题页</a>
-                <a href="https://github.com/onmyodev/MinimalistFlex">GitHub 仓库页</a>
+                <div class="icon"><span class="ri-brush-2-fill ri-fw"></span></div>
+                <div>
+                    <h3>MinimalistFlex</h3>
+                    <p>自己写的同时也是自用的简约 WordPress 主题，本人 GitHub 上唯一一个有 Star 的仓库...</p>
+                    <a href="https://wordpress.org/themes/MinimalistFlex">WordPress 主题页</a>
+                    <a href="https://github.com/onmyodev/MinimalistFlex">GitHub 仓库页</a>
+                </div>
             </div>
             <div class="project">
-                <h3>MC 服务器</h3>
-                <p>为什么要宣传这个呢？我也不知道 ¯\_ (ツ)_/¯</p>
-                <p>地址：dyhcn.codes</p>
+                <div class="icon"><span class="ri-box-3-line ri-fw"></span></div>
+                <div>
+                    <h3>MC 服务器</h3>
+                    <p>为什么要宣传这个呢？我也不知道 ¯\_ (ツ)_/¯</p>
+                    <p>地址：dyhcn.codes</p>
+                </div>
             </div>
         </div>
         <p><s>短期内肯定爆死的就不放啦，比如说服务器只有一个月有效期的那种</s></p>
@@ -65,9 +86,9 @@
         <p>虽然不全是社交媒体的说...</p>
         <p>另外我自建服务的爱好在这里体现的淋漓尽致...</p>
         <ul class="socials">
-            <li><span>GitHub:</span><a href="https://github.com/onmyodev/">onmyodev</a></li>
-            <li><span>Mastodon:</span><a href="https://meishin.site/@kyoukawa">@kyoukawa@meishin.site</a></li>
-            <li><span>Email:</span><a href="mailto:support@onmyodev.com">support@onmyodev.com</a></li>
+            <li><span><span class="ri-github-fill ri-fw"></span><span>GitHub:</span></span><a href="https://github.com/onmyodev/">onmyodev</a></li>
+            <li><span><span class="ri-mastodon-fill ri-fw"></span><span>Mastodon:</span></span><a href="https://meishin.site/@kyoukawa">@kyoukawa@meishin.site</a></li>
+            <li><span><span class="ri-mail-line ri-fw"></span><span>Email:</span></span><a href="mailto:support@onmyodev.com">support@onmyodev.com</a></li>
         </ul>
         <p>在某国外论坛上也很活跃的说！</p>
         <a href="https://forum.infinityfree.com/u/Meishin/summary">点我直达</a>
