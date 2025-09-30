@@ -1,3 +1,13 @@
+@keyframes floating {
+    0% { transform: translate(0px, 0px); }
+    50% { transform: translate(0px, -10px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+.floating {
+    animation: floating 2.5s infinite ease-in-out;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -13,8 +23,41 @@ a:visited {
     color: orange;
 }
 
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 2em;
+    color: white;
+    justify-content: space-between;
+    backdrop-filter: blur(5px) brightness(1.4) saturate(0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav > a {
+    margin: 0 1em;
+    font-weight: normal;
+    color: white !important;
+    box-sizing: content-box;
+}
+
+a.current {
+    font-weight: bold;
+    border-bottom: solid 2px white;
+}
+
 section, footer {
-    margin: 2em 0;
+    margin: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,12 +90,13 @@ section, footer {
     color: white;
 }
 
-#avatar {
+.avatar {
     width: 6em;
     height: 6em;
+    transition: all 250ms;
 }
 
-#avatar > img {
+.avatar > img {
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -60,10 +104,26 @@ section, footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.project {
-    margin: 2em 0;
+.avatar:hover {
+    transform: scale(1.1);
+    transition: all 250ms;
 }
 
+.project {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project > .icon {
+    font-size: 4em;
+    margin: 0.25em;
+}
+
+
+.friends > li,
 .socials > li,
 .skills > li {
     display: flex;
@@ -78,8 +138,51 @@ section, footer {
     margin-right: 2em;
 }
 
+.socials > li > span > span {
+    padding-right: 1em;
+}
+
+.friends,
 .socials,
 .skills {
     list-style-type: none;
     padding: 0;
+}
+
+.friends > li {
+    align-items: center;
+}
+
+.friends > li > .description {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.screenshots,
+.avatars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.avatars > .avatar {
+    margin: 2em;
+}
+
+.screenshot {
+    margin: 2em;
+    max-width: calc(100% - 2em);
+    width: 400px;
+    height: 300px;
+}
+
+.screenshot > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
 }
